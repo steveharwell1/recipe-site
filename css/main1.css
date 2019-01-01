@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+	padding: 0;
+	margin: 0;
+	background: rgb(248, 231, 225);
+	font-family: lato;
+}
+
+body {
+	margin:0;
+	padding: 0;
+}
+div {
+	margin: 1em;
+}
+nav {
+	width: 100%;
+	min-height: 150px;
+	background: right/700px linear-gradient(.25turn, rgba(51, 39, 22, 1), rgba(51, 39, 22, 0)), no-repeat right url("../img/cranberries.jpg"), rgb(51, 39, 22);
+	color: rgb(248, 231, 225);
+	margin:0;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 3em;
+}
+
+h1 {
+	padding-bottom: 2em;
+}
+
+h2 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+nav > * {
+	margin: 0;
+	padding: 0 20px;
+	color: rgb(248, 231, 225);
+}
+
+a:hover, nav > *:hover {
+	color: #ccc;
+}
+.container {
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-evenly;
+}
+
+.hor {
+	flex-direction: row;
+	justify-content: space-evenly;
+	}
+header {
+	width: 100%;
+	background: #ccc;
+}
+
+.card {
+	margin: 1em;
+	background: #ccc;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .4);
+	transition: 50ms 200ms ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card img {
+	width: 200px;
+
+}
+
+.card:hover {
+	transform: scale(1.2);
+}
+
+.recipe-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin: 0;
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	display:flex;
+	position: relative;
+}
+
+.recipe-card {
+	border: dashed rgb(57, 17, 10);
+	color: rgb(57, 17, 10);
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recipe-card img {
+	width: 300px;
+	border-radius: 1em;
+	margin: 1em;
+}
+.recipe-card p {
+	margin: 1em;
+	max-width: 25em;
+}
+.recipe-card .options {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+#individual {
+	width: 10em;
+	padding: 1em;
+	border-radius: 1em;
+	background: rgb(57, 17, 10);
+	text-align: center;
+	font-size: 2em;
+	color: rgb(248, 231, 225);
+}
+#individual a {
+	color: rgb(248, 231, 225);
+	text-decoration: underline;
+}
+
+#flash, #flash > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#sidebar {
+	margin:0;
+	width: 200px;
+	position: absolute;
+	left: 0;
+	transition: 300ms;
+	transition-delay: 50ms;
+	z-index:1;
+	background: rgb(51, 39, 22);
+	color: rgb(248, 231, 225);
+	display:flex;
+	flex-direction: column;
+}
+#sidebar > a {
+	flex: 0 0 100%;
+	color: rgb(248, 231, 225);
+	margin: .25em;
+}
+
+.hide {
+	transform-origin: 0 0;
+	transform: scale(0, 1);
+}
+
+#sidebar > a > .round {
+	background: rgb(248, 231, 225);
+	color: rgb(57, 17, 10);
+	border-radius: 6px;
+	margin: 0 .5em;
+	padding: .25em;
+}
