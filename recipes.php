@@ -1,6 +1,7 @@
 <?php
 require('templates/recipe_header.php');
 require_once('templates/dbi.php');
+require_once('models.php');
 $result = null;
 if(isset($_GET['id'])){
 	$single = (int)$_GET['id'];
